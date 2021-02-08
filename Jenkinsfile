@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Completed'
+        sh ''
       }
     }
     stage('Test') {
@@ -13,6 +14,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
+        sh 'sh date'
         echo 'Deploy Completed'
       }
     }
